@@ -37,6 +37,9 @@
     top: 30px;
 }
 
+.logo:hover{
+    opacity: 0.3;
+}
 
 
 #circle1 {

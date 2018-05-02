@@ -2,8 +2,7 @@
 .menu a:link { color: black; text-decoration: none;}
 .menu a:visited { color: black; text-decoration: none;}
 .menu a:hover { color: #003999; text-decoration: underline #F7B254;}
-
-
+.menu a:active{ color: #003999; text-decoration: underline #F7B254;}
 
 #box1 {
     position: absolute;

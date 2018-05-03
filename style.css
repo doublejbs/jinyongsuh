@@ -1,9 +1,18 @@
 @charset "utf-8";
 .menu a:link { color: black; text-decoration: none;}
 .menu a:visited { color: black; text-decoration: none;}
-.menu a:hover { color: #003999; text-decoration: underline #F7B254;}
+.menu a:hover { color: #003999; -webkit-text-decoration: underline #F7B254; text-decoration: underline #F7B254;}
 
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+html, body{
+    width: 100%;
+    height: 100%;
+}
 
 #box1 {
     position: absolute;
@@ -12,6 +21,9 @@
     top: 10px;
     right: 10px;
     bottom: 10px;
+    height: 1000px;
+    
+   
 }
 
 #box2 {
@@ -21,6 +33,7 @@
     right: 10px;
     border: 3px solid black;
     bottom: 30px;
+    
 }
 
 #box3 {
@@ -32,9 +45,8 @@
     bottom: 30px;
 }
 .logo {
-    position: absolute;
-    left: 20px;
-    top: 30px;
+    position: fixed;
+    top: 40px;
 }
 
 .logo:hover{
@@ -43,7 +55,8 @@
 
 
 #circle1 {
-    position: absolute;
+    position: fixed;
+    left: 40px;
     width: 50px;                              
     height: 50px;                            
     background: #F7B254; 
@@ -53,8 +66,8 @@
 
 
 #circle2 {
-    position: absolute;
-    left: 30px;
+    position: fixed;
+    left: 70px;
     width: 50px;                              
     height: 50px;                            
     background: #003999; 
@@ -89,8 +102,8 @@
 
 .menu {
     top: 100px;
-    left: 20px;
-    position: absolute;
+    left: 40px;
+    position: fixed;
     font-size: 25px;
     font-weight: bold; 
 }

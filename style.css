@@ -1,129 +1,137 @@
-@charset "utf-8";
-.menu a:link { color: black; text-decoration: none;}
-.menu a:visited { color: black; text-decoration: none;}
-.menu a:hover { color: #097054; -webkit-text-decoration: underline #FFDE00; text-decoration: underline #F7B254;}
 
-* {
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-    font-family: 'Nanum Myeongjo', serif;
-    -webkit-font-family: 'Nanum Myeongjo', serif;
+
+@keyframes revolveX {
+  to {
+    transform: rotateX(180deg);
+  }
+}
+@keyframes revolveY {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes revolve {
+  to {
+      transform: rotateX(360deg);
+  }
 }
 
-html, body{
-    width: 100%;
-    height: 100%;
-}
+.center-logo {
 
-#box1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+}
+#logo{
     position: absolute;
     border: 3px solid black;
-    left: 10px;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
+    
+}
+
+
+.logo-caption{
+    position: absolute;
+    left: 320px;
+    height: 300px;
+    width: 500px;
+    
+    font-size: 63px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: italic;
+    font-weight: 700
+    
+    
+}
+
+
+.logo-caption a:hover{
+    animation: revolve 3s infinite linear;
+}
+
+#circle1{
+    display: block;
+    background: #FFD852;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background: white;
+    border: 3px solid black;
+    animation: revolveX 3s infinite linear;
+}
+#circle2{
+    position: absolute;
+    top: 0px;
+    display: inline;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 3px solid black; 
+    animation: revolveY 3s infinite linear;
+}
+#circle3{
+    position: absolute;
+    top: 0px;
+    display: inline;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 3px solid black; 
+    animation: revolveY 3s infinite linear;
+}
+#circle4{
+    position: absolute;
+    top: 0px;
+    display: inline;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 3px solid black; 
+    animation: revolveX 3s infinite linear;
+}
+#circle5{
+    position: absolute;
+    top: 0px;
+    display: inline;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 3px solid black; 
+    animation: revolve 3s infinite linear;
+    
+}
+
+
+.nav-menu {
+    position: relative;
+    font-size: 63px;
+    color: #1F655B;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    left: 9%;
+}
+
+.nav-menu a:link{
+    color: black; text-decoration: none;
+}
+
+.nav-menu a:visited{
+     color: black; text-decoration: none;
+}
+
+.nav-menu a:hover{
+    color: #1F655B; 
+    -webkit-text-decoration: underline ##FFD852;
+    text-decoration: underline #FFD852;
+}
+.content-container{
+    position: absolute;
+    top: 370px;
+    width: 1200px;;
     height: 1000px;
-    
-   
-}
-
-#box2 {
-    position: absolute;
-    top: 30px;
-    left: 130px;
-    right: 10px;
+    left: 9%;
     border: 3px solid black;
-    bottom: 30px;
     
 }
-
-#box3 {
-    position: absolute;
-    border: 3px solid black;
-    top: 30px;
-    left: 130px;
-    right: 10px;
-    bottom: 30px;
-}
-.logo {
-    position: fixed;
-    top: 40px;
-}
-
-.logo:hover{
-    opacity: 0.3;
-}
-
-
-#circle1 {
-    position: fixed;
-    left: 40px;
-    width: 50px;                              
-    height: 50px;                            
-    background: #FFDE00; 
-    border: 3px solid black;
-    border-radius: 100px;     
-}
-
-
-#circle2 {
-    position: fixed;
-    left: 70px;
-    width: 50px;                              
-    height: 50px;                            
-    background: #097054; 
-    border: 3px solid black;
-    border-radius: 100px;     
-}
-
-.backlogo{
-    position: absolute;
-    top: 30%;
-    left: 35%
-}
-
-#bigcircle1 {
-    position: absolute;
-    width: 300px;                              
-    height: 300px;                            
-    background: #FFDE00; 
-    border: 3px solid black;
-    border-radius: 50%;     
-}
-
-#bigcircle2 {
-    position: absolute;
-    left: 150px;
-    width: 300px;                              
-    height: 300px;                            
-    background: #097054; 
-    border: 3px solid black;
-    border-radius: 50%;     
-}
-
-.menu {
-    top: 100px;
-    left: 40px;
-    position: fixed;
-    font-size: 25px;
-    font-weight: bold; 
-}
-
-.menu li{
-    list-style: none;
-    
-    
-}
-
-
-
-
-
-
-
-
-
-
-
 

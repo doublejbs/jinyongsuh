@@ -40,6 +40,13 @@
     font-style: italic;
     font-weight: 700 
 }
+#logo-caption span:hover{
+    animation: revolveX 3s infinite linear;
+}
+
+#logo-caption:hover{
+    animation: revolveX 3s infinite linear;
+}
 
 
 #circle1{
@@ -115,7 +122,7 @@
 
 .nav-menu a:hover{
     color: #1F655B; 
-    -webkit-text-decoration: underline ##FFD852;
+    -webkit-text-decoration: underline #FFD852;
     text-decoration: underline #FFD852;
 }
 .content-container{

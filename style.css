@@ -30,24 +30,17 @@
 }
 
 
-.logo-caption{
+#logo-caption{
     position: absolute;
     left: 320px;
     height: 300px;
-    width: 500px;
-    
+    width: 500px; 
     font-size: 63px;
     font-family: 'Nanum Gothic', sans-serif;
     font-style: italic;
-    font-weight: 700
-    
-    
+    font-weight: 700 
 }
 
-
-.logo-caption a:hover{
-    animation: revolve 3s infinite linear;
-}
 
 #circle1{
     display: block;

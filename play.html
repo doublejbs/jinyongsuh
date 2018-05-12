@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <style>
+        
+    </style>
+<body>
+    <div><canvas id="canvas"></canvas></div>
+</body>
+<script>
+    window.addEventListener("load", eventWindowLoaded, false);
+    function eventWindowLoaded(){
+        canvasApp();
+    }
+    
+    function canvasApp(){
+        var _cw = window.innerWidth;
+        var _ch = window.innerHeight;
+        
+        
+        var _canvas = document.getElementById("canvas");
+        _canvas.width = _cw;
+        _canvas.height = _ch;
+        
+        var ctx = _canvas.getContext("2d");
+        
+        
+        
+        function drawScreen(){
+            ctx.fillStyle = "#000";
+            ctx.fillRect(0, 0, _canvas.width, _canvas.height);
+            
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(10,10,50,50);
+        }
+        
+        
+        drawScreen();
+    }
+    
+    
+    
+    
+</script>
+</html>

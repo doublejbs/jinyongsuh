@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<head>
+    
+    
+    
+</head>
+<body>
+    <div class="main">
+        <div class="nav-menu" style="position: absolute; border: 3px solid black; width: 370px; height: 780px;">
+            <form action="/welcome" method="post" style="border-bottom: 1px solid black;">
+                <h1>Hello, ${req.user.username}</h1>
+                <a href="/auth/logout">logout</a></form>
+                
+        </div>
+        <div class="menus" style="position: absolute; top: 200px;">
+            <div id="menu1" style="margin-bottom: 100px; font-size: 50px"><a href="menu1">meun 1</a></div>
+            <div id="menu1" style="margin-bottom: 100px; font-size: 50px"><a href="menu1">meun 1</a></div>
+            <div id="menu1" style="margin-bottom: 100px; font-size: 50px"><a href="menu1">meun 1</a></div>
+        </div>
+        <div class="content" style="border: 3px solid black; position: absolute; width: 1030px; height: 780px; left: 400px ">
+            <h1>권한요청 확인</h1>
+            <form action="/welcome" method="post"><h1>${username}</h1><h1><button type="submit" name="username" value=${username}>요청확인</button></h1></form>
+        </div>
+        
+    </div>
+    
+</body>

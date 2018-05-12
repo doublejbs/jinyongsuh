@@ -125,6 +125,7 @@
 .content-container{
     display: grid;
     -webkit-grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
     position: absolute;
     top: 370px;
     width: 98.5%;

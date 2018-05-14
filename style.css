@@ -16,6 +16,21 @@
   }
 }
 
+@media (max-width: 600px){
+    html, body{
+        width: 50%;
+        height: 50%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    #logo{
+        position: absolute;
+        left: 0px;
+    }
+}
+
+
 html, body{
     width: 100%;
     height: 100%;

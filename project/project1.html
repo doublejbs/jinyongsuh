@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+       
+   </head>
+<body>
+    <canvas id="canvas" style="display: block; margin: 0 auto; width:1500; height: 1500; border: 1px solid black;"></canvas>
+    
+    <script>
+    function draw(canvas, mousePos){
+             var ctx = canvas.getContext('2d');
+             ctx.clearRect(0,0,canvas.width,canvas.height);
+             ctx.save();
+             ctx.fillStyle = 'black';
+             ctx.fillRect(0,0,canvas.width,canvas.height);
+             var mouseX = mousePos.x;
+             var mouseY = mousePos.y;
+             
+                 
+             var radgrad = ctx.createRadialGradient(mouseX,mouseY,10,mouseX,mouseY,50);
+             radgrad.addColorStop(0, 'white');
+             radgrad.addColorStop(0.7, 'rgba(255,253,57,0.4)');
+             radgrad.addColorStop(1, 'yellow');
+
+              
+
+              ctx.fillStyle = 'white';
+              ctx.beginPath();
+              ctx.arc(mouseX, mouseY, 90, 0, Math.PI*2, true);
+              ctx.fill();
+              
+                cxt.font = 'bold 150px Arial';
+                cxt.textAlign = 'center';
+                cxt.textBaseline = 'middle';
+                cxt.fillStyle = '#058';
+                cxt.fillText('CANVAS', canvas.width/2, canvas.height/4);
+                cxt.fillText('IS', canvas.width/2, canvas.height/2);
+                cxt.fillText('AWESOME', canvas.width/2, canvas.height*3/4);
+        
+        
+        
+        
+              ctx.restore();
+              
+              
+    
+  }
+        
+        
+      
+    
+        
+        
+      function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        var e = event || window.event;
+        return {
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top
+        };
+      }
+      
+        
+      
+
+      
+        
+      window.onload = function(){
+          var canvas = document.getElementById('canvas');
+          var context = canvas.getContext('2d');
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          
+          
+          
+          drawInter = setInterval(function(){
+                
+                draw(canvas);
+                update(canvas.width, canvas.height);
+                
+            },30);
+          
+          
+          
+              
+              
+              canvas.addEventListener('mousemove', function(e){
+                    var mousePos = getMousePos(canvas, e);
+                    clearInterval(drawInter);
+                    draw(canvas, mousePos);
+                    
+                    
+                    
+              });
+          
+          
+      }
+    
+    </script>
+</body>
+</html>

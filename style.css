@@ -1,3 +1,19 @@
+@media screen and (max-width:600){
+    
+    .nav-menu{
+        display: none;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 @keyframes revolveX {
@@ -25,10 +41,10 @@ html, body{
 }
 
 .center-logo {
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 300px;
-    left: 50%;
+    left: 45%;
 }
 #logo{
     position: absolute;
@@ -38,6 +54,7 @@ html, body{
 
 
 #logo-caption{
+    
     position: absolute;
     left: 320px;
     height: 300px;
@@ -45,7 +62,8 @@ html, body{
     font-size: 63px;
     font-family: 'Nanum Gothic', sans-serif;
     font-style: italic;
-    font-weight: 700 
+    font-weight: 700;
+    
 }
 
 

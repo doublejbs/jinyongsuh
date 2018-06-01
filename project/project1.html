@@ -22,10 +22,10 @@
              var mouseY = mousePos.y;
              
                  
-             var radgrad = ctx.createRadialGradient(mouseX,mouseY,10,mouseX,mouseY,50);
+             /*var radgrad = ctx.createRadialGradient(mouseX,mouseY,10,mouseX,mouseY,50);
              radgrad.addColorStop(0, 'white');
              radgrad.addColorStop(0.7, 'rgba(255,253,57,0.4)');
-             radgrad.addColorStop(1, 'yellow');
+             radgrad.addColorStop(1, 'yellow');*/
 
               
 
@@ -34,16 +34,6 @@
               ctx.arc(mouseX, mouseY, 90, 0, Math.PI*2, true);
               ctx.fill();
               
-                cxt.font = 'bold 150px Arial';
-                cxt.textAlign = 'center';
-                cxt.textBaseline = 'middle';
-                cxt.fillStyle = '#058';
-                cxt.fillText('CANVAS', canvas.width/2, canvas.height/4);
-                cxt.fillText('IS', canvas.width/2, canvas.height/2);
-                cxt.fillText('AWESOME', canvas.width/2, canvas.height*3/4);
-        
-        
-        
         
               ctx.restore();
               
